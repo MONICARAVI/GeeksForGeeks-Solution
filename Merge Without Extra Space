@@ -1,0 +1,12 @@
+testcases = int(input())
+while(testcases>0):
+    
+    n,m=input().split()
+    arr1=list(map(int,input().split()))
+    arr2=list(map(int,input().split()))
+    arr1.extend(arr2)
+    arr1.sort()
+    for i in arr1:
+        print(i,end=" ")
+    print()
+    testcases-=1
